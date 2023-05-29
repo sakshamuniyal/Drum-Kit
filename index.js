@@ -9,6 +9,11 @@ for (let i=0; i<document.querySelectorAll(".drum").length; i++) {
     );
 }
 
+document.addEventListener("keydown", function(event) {
+
+    makeSound(event.key);
+    animateButton(event.key);
+});
 
 document.addEventListener("touchstart", function(event) {
 
